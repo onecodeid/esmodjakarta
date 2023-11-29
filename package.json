@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "connect-modrewrite": "^0.10.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "sass:watch": "node-sass src\\assets\\scss\\compile\\ -o public\\assets\\css\\ -w",
+    "postcss:process": "postcss public\\assets\\css\\*.css --config postcss.config.js -d public\\assets\\css\\",
+    "concat:css": "concat -o public\\assets\\css\\style.min.css public\\assets\\css\\*.css",
+    "build:css": "npm run sass:watch & npm run postcss:process & npm run concat:css"
+  }
+}
