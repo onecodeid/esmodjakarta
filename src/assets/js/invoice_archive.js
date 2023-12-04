@@ -26,8 +26,9 @@ const InvoiceArchive = function() {
 
         // Initialize
         $('.invoice-archive').DataTable({
-            autoWidth: false,
-            columnDefs: [
+            responsive: true,
+            // autoWidth: false,
+            // columnDefs: [
                 // {
                 //     width: 30,
                 //     targets: 0
@@ -53,32 +54,29 @@ const InvoiceArchive = function() {
                 //     width: '15%',
                 //     targets: 3
                 // }
-            ],
-            order: [[ 0, 'desc' ]],
+            // ],
+            // order: [[ 0, 'desc' ]],
             dom: '<"datatable-header"fl><"datatable-scroll-lg"t><"datatable-footer"ip>',
             language: {
-                search: '<span class="me-3">Filter:</span> <div class="form-control-feedback form-control-feedback-end flex-fill">_INPUT_<div class="form-control-feedback-icon"><i class="ph-magnifying-glass opacity-50"></i></div></div>',
+                search: '<span>Filter:</span> _INPUT_',
                 searchPlaceholder: 'Type to filter...',
-                lengthMenu: '<span class="me-3">Show:</span> _MENU_',
-                paginate: { 'first': 'First', 'last': 'Last', 'next': document.dir == "rtl" ? '&larr;' : '&rarr;', 'previous': document.dir == "rtl" ? '&rarr;' : '&larr;' }
+                lengthMenu: '<span>Show:</span> _MENU_',
+                paginate: { 'first': 'First', 'last': 'Last', 'next': $('html').attr('dir') == 'rtl' ? '&larr;' : '&rarr;', 'previous': $('html').attr('dir') == 'rtl' ? '&rarr;' : '&larr;' }
             },
-            lengthMenu: [ 25, 50, 75, 100 ],
-            displayLength: 25,
-            drawCallback: function ( settings ) {
-                const api = this.api();
-                const rows = api.rows( {page:'current'} ).nodes();
-                let last = null;
-     
-                // api.column(1, {page:'current'} ).data().each( function ( group, i ) {
-                //     if ( last !== group ) {
-                //         $(rows).eq( i ).before(
-                //             '<tr class="table-light"><td colspan="8" class="fw-semibold">'+group+'</td></tr>'
-                //         );
-     
-                //         last = group;
-                //     }
-                // });
-            }
+            // dom: '<"datatable-header"fl><"datatable-scroll-lg"t><"datatable-footer"ip>',
+            // language: {
+            //     search: '<span class="me-3">Filter:</span> <div class="form-control-feedback form-control-feedback-end flex-fill">_INPUT_<div class="form-control-feedback-icon"><i class="ph-magnifying-glass opacity-50"></i></div></div>',
+            //     searchPlaceholder: 'Type to filter...',
+            //     lengthMenu: '<span class="me-3">Show:</span> _MENU_',
+            //     paginate: { 'first': 'First', 'last': 'Last', 'next': document.dir == "rtl" ? '&larr;' : '&rarr;', 'previous': document.dir == "rtl" ? '&rarr;' : '&larr;' }
+            // },
+            // lengthMenu: [ 25, 50, 75, 100 ],
+            // displayLength: 25,
+            // drawCallback: function ( settings ) {
+            //     const api = this.api();
+            //     const rows = api.rows( {page:'current'} ).nodes();
+            //     let last = null;
+            // }
         });
     };
 

@@ -46,20 +46,28 @@ var TaskManagerList = function () {
         // Initialize data table
         $('.tasks-list').DataTable({
             autoWidth: false,
+            responsive: true,
             columnDefs: [
                 {
                     type: "natural",
-                    width: 20,
+                    width: '5%x',
                     targets: 0,
-                    orderable: false
+                    orderable: false,
                 },
                 // {
                 //     visible: false,
                 //     targets: 1
                 // },
                 {
-                    width: '40%',
+                    width: '55%',
                     targets: 1,
+                    orderable: false,
+                    responsivePriority: 1
+                },
+                {
+                    width: '20%',
+                    targets: 3,
+                    class: 'text-center',
                     orderable: false
                 },
                 {
@@ -82,6 +90,10 @@ var TaskManagerList = function () {
                     orderable: false,
                     targets: 3
                 },
+
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority: 10001, targets: 4 },
+                { responsivePriority: 2, targets: -2 }
                 // {
                 //     width: '15%',
                 //     targets: [4, 5, 6]
@@ -136,3 +148,69 @@ var TaskManagerList = function () {
 document.addEventListener('DOMContentLoaded', function() {
     TaskManagerList.init();
 });
+
+// $('#DataTables_Table_0 thead > tr > th:eq(1)').width('70%')
+
+// X-Small	None	<576px
+// Small	sm	≥576px
+// Medium	md	≥768px
+// Large	lg	≥992px
+// Extra large	xl	≥1200px
+// Extra extra large	xxl	≥1400px
+
+(function($, document, window, viewport){
+
+    // var highlightBox = function( className ) {
+    //     $(className).addClass('active');
+    // }
+
+    // var highlightBoxes = function() {
+    //     $('.comparison-operator').removeClass('active');
+
+    //     if( viewport.is("<=sm") ) {
+    //         highlightBox('.box-1');
+    //     }
+
+    //     if( viewport.is("md") ) {
+    //         highlightBox('.box-2');
+    //     }
+
+    //     if( viewport.is(">md") ) {
+    //         highlightBox('.box-3');
+    //     }
+    // }
+    var showHideColumn = function () {
+        if( viewport.is("<=sm") ) {
+            $('.tasks-list th:eq(1)').css('width', '90%');
+            // $('.tasks-list').DataTable().column(1).width('90%');
+        }
+
+        if( viewport.is("md") ) {
+           
+        }
+
+        if( viewport.is(">md") ) {
+            $('.tasks-list th:eq(1)').css('width', '55%');
+        }
+    }
+
+    // Executes once whole document has been loaded
+    $(document).ready(function() {
+
+        // highlightBoxes();
+        showHideColumn()
+
+        console.log('Current breakpoint:', viewport.current());
+
+    });
+
+    $(window).resize(
+        viewport.changed(function(){
+            // highlightBoxes();
+            showHideColumn()
+
+            console.log('Current breakpoint:', viewport.current());
+        })
+    );
+
+})(jQuery, document, window, ResponsiveBootstrapToolkit);
