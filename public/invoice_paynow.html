@@ -363,34 +363,25 @@
     <!-- Sidebar content -->
     <div class="sidebar-content">
 
-        <!-- User menu -->
-        <div class="sidebar-section sidebar-user my-1">
-            <div class="sidebar-section-body">
-                <div class="media">
-                    <a href="#" class="mr-3">
-                        <img src="https://thumbs.dreamstime.com/b/close-up-portrait-female-character-islamic-veil-headscarf-hijab-avatar-icon-vector-illustration-chador-round-circle-282606509.jpg" class="rounded-circle" alt="">
+        <div class="sidebar-section sidebar-section-body user-menu-vertical text-center">
+            <div class="card-img-actions d-inline-block">
+                <img class="img-fluid rounded-circle" src="https://thumbs.dreamstime.com/b/close-up-portrait-female-character-islamic-veil-headscarf-hijab-avatar-icon-vector-illustration-chador-round-circle-282606509.jpg" width="80" height="80" alt="">
+                <div class="card-img-actions-overlay card-img rounded-circle">
+                    <a href="#" class="btn btn-white btn-icon btn-sm rounded-pill">
+                        <i class="icon-pencil"></i>
                     </a>
+                </div>
+            </div>
 
-                    <div class="media-body">
-                        <div class="font-weight-semibold">Victoria Baker</div>
-                        <div class="font-size-sm line-height-sm opacity-50">
-                            Senior developer
-                        </div>
-                    </div>
-
-                    <div class="ml-3 align-self-center">
-                        <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
-                            <i class="icon-transmission"></i>
-                        </button>
-
-                        <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
-                            <i class="icon-cross2"></i>
-                        </button>
+            <div class="sidebar-resize-hide position-relative mt-2">
+                <div class="dropdown">
+                    <div class="cursor-pointer" data-toggle="dropdown">
+                        <h6 class="font-weight-semibold  mb-0">Hanna Dorman</h6>
+                        <span class="d-block text-muted">hanna@dorman.com</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /user menu -->
 
 
         <!-- Main navigation -->
@@ -398,16 +389,17 @@
             <ul class="nav nav-sidebar" data-nav-type="accordion">
 
                 <!-- Main -->
-                <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
-                <!-- <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        <i class="icon-home4"></i>
-                        <span>
-                            Dashboard
-                            <span class="d-block font-weight-normal opacity-50">No active orders</span>
-                        </span>
+                <!-- <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li> -->
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <i class="icon-home4"></i><span>Dashboard</span>
                     </a>
-                </li> -->
+                </li>
+                <li class="nav-item">
+                    <a href="user_profile.html" class="nav-link">
+                        <i class="icon-home4"></i><span>Student Profile</span>
+                    </a>
+                </li>
                 <li class="nav-item nav-item-submenu">
                     <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Invoice</span></a>
 
