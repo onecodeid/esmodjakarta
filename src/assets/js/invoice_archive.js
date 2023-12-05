@@ -27,34 +27,38 @@ const InvoiceArchive = function() {
         // Initialize
         $('.invoice-archive').DataTable({
             responsive: true,
-            // autoWidth: false,
-            // columnDefs: [
-                // {
-                //     width: 30,
-                //     targets: 0
-                // },
-                // {
-                //     visible: false,
-                //     targets: 1
-                // },
+            autoWidth: false,
+            columnDefs: [
+                {
+                    width: '15%',
+                    targets: 0
+                },
+                {
+                    width: '35%',
+                    targets: [1]
+                },
+                {
+                    width: '10%',
+                    targets: [2]
+                },
                 // { 
                 //     orderable: false,
                 //     width: 120,
                 //     targets: 7
                 // },
-                // {
-                //     width: '15%',
-                //     targets: [4, 5]
-                // },
-                // {
-                //     width: '15%',
-                //     targets: 6
-                // },
+                {
+                    width: '15%',
+                    targets: [4, 3]
+                },
+                {
+                    width: '10%',
+                    targets: 5
+                },
                 // {
                 //     width: '15%',
                 //     targets: 3
                 // }
-            // ],
+            ],
             // order: [[ 0, 'desc' ]],
             dom: '<"datatable-header"fl><"datatable-scroll-lg"t><"datatable-footer"ip>',
             language: {
