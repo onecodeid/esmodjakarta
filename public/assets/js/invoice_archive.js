@@ -60,7 +60,8 @@ const InvoiceArchive = function() {
                 // }
             ],
             // order: [[ 0, 'desc' ]],
-            dom: '<"datatable-header"fl><"datatable-scroll-lg"t><"datatable-footer"ip>',
+            dom: 'rtp',
+            // dom: '<"datatable-header"fl><"datatable-scroll-lg"t><"datatable-footer"ip>',
             language: {
                 search: '<span>Filter:</span> _INPUT_',
                 searchPlaceholder: 'Type to filter...',
@@ -102,4 +103,9 @@ const InvoiceArchive = function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     InvoiceArchive.init();
+
+    // Default initialization
+    $('.select').select2({
+        minimumResultsForSearch: Infinity
+    });
 });

@@ -67,13 +67,19 @@ var TaskManagerList = function () {
                 {
                     width: '20%',
                     targets: 3,
+                    class: 'text-left text-sm-center',
+                    orderable: false
+                },
+                {
+                    width: '10%',
+                    targets: 2,
                     class: 'text-center',
                     orderable: false
                 },
                 {
                     width: '10%',
-                    targets: [2,4],
-                    class: 'text-center',
+                    targets: 4,
+                    class: 'text-left text-sm-center',
                     orderable: false
                 },
                 // {

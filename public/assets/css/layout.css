@@ -157,6 +157,13 @@ body {
 .label-content-mb {
   margin-bottom: 0.3125rem; }
 
+.navbar-nav li.nav-item {
+  color: white !important; }
+  .navbar-nav li.nav-item a, .navbar-nav li.nav-item span {
+    color: black !important; }
+  .navbar-nav li.nav-item :hover a, .navbar-nav li.nav-item :hover span {
+    color: black !important; }
+
 /* ------------------------------------------------------------------------------
  *
  *  # Page header

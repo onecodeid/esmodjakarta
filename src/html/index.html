@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 @@include('./partials/head.html')
+<script src="./assets/js/select2.min.js"></script>
+<script src="./assets/js/invoice_archive.js"></script>
 
 </head>
 
@@ -30,7 +32,7 @@
 				<div class="page-header page-header-light">
 					<div class="page-header-content header-elements-lg-inline">
 						<div class="page-title d-flex">
-							<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Invoices</span> - Archive</h4>
+							<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Invoices</span> / Bills</h4>
 							<a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
 						</div>
 
@@ -43,41 +45,14 @@
 						</div>
 					</div>
 
-					<div class="breadcrumb-line breadcrumb-line-light header-elements-lg-inline">
+					<!-- <div class="breadcrumb-line breadcrumb-line-light header-elements-lg-inline">
 						<div class="d-flex">
 							<div class="breadcrumb">
 								<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
 								<a href="invoice_archive.html" class="breadcrumb-item">Invoices</a>
-								<span class="breadcrumb-item active">Archive</span>
-							</div>
-
-							<a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
-						</div>
-
-						<div class="header-elements d-none">
-							<div class="breadcrumb justify-content-center">
-								<a href="#" class="breadcrumb-elements-item">
-									<i class="icon-comment-discussion mr-2"></i>
-									Support
-								</a>
-
-								<div class="breadcrumb-elements-item dropdown p-0">
-									<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-										<i class="icon-gear mr-2"></i>
-										Settings
-									</a>
-
-									<div class="dropdown-menu dropdown-menu-right">
-										<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-										<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-										<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-										<div class="dropdown-divider"></div>
-										<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-									</div>
-								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<!-- /page header -->
 
@@ -87,8 +62,38 @@
 
 					<!-- Invoice archive -->
                     <div class="card">
-						<div class="card-header bg-transparent header-elements-inline">
-							<h6 class="card-title">Invoice archive</h6>
+						<div class="card-header bg-transparent header-elements-inlines">
+							<div class="row">
+								<div class="col-12 col-md-6 d-flex pb-2 pb-md-0
+									px-1 px-md-3 
+									justify-content-center justify-content-sm-start">
+									<h5 class="card-title my-auto">Invoices / Bills</h4>
+								</div>
+								<div class="col-12 col-md-6 px-1 px-md-3">
+									<div class="row">
+										<div class="col-12 col-sm-6">
+											<div class="form-group mb-1 mb-sm-0">
+												<select class="form-control select" data-fouc>
+													<option value="DD">Due Date</option>
+													<option value="ID">Invoice Date</option>
+													<option value="AD">Amount Date</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6">
+											<div class="form-group mb-0">
+												<select class="form-control select" data-fouc>
+													<option value="DD">All</option>
+													<option value="ID">Paid</option>
+													<option value="AD">Unpaid</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
 						</div>
 
 						<table class="table table-lg invoice-archive">

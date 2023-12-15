@@ -1639,7 +1639,7 @@ label.custom-control {
 .navbar-brand {
   margin: 0; }
   .navbar-brand img {
-    height: 1.125rem; }
+    height: 2rem; }
 
 .navbar-text {
   padding-top: 1rem;
@@ -2311,8 +2311,8 @@ label.custom-control {
   padding-bottom: calc(6.25rem + 2px); }
 
 .navbar-lg .navbar-brand {
-  padding-top: 1.375rem;
-  padding-bottom: 1.375rem; }
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem; }
 
 .navbar-lg .navbar-toggler {
   padding-top: 1.25rem;
@@ -2337,8 +2337,8 @@ label.custom-control {
   max-height: 2.62506rem; }
 
 .navbar-sm .navbar-brand {
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem; }
+  padding-top: 0.4375rem;
+  padding-bottom: 0.4375rem; }
 
 .navbar-sm .navbar-toggler {
   padding-top: 0.75rem;

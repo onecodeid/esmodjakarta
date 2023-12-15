@@ -115,3 +115,28 @@ body {
 .label-content-mb {
     margin-bottom: $spacer * .25;
 }
+
+// Navbar Nav
+.navbar-nav {
+    li.nav-item {
+        color: white!important;
+
+        a,span {
+            color:black!important;
+        }
+        
+        :hover {
+            a,span {
+                color:black!important;
+            }
+        }
+    }
+} 
+
+// li.nav-item:hover {
+//     background: #ee3a43
+// }
+
+// li.nav-item:hover a,li.nav-item:hover span {
+//     color: #fff!important
+// }
