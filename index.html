@@ -1,742 +1,784 @@
 <!DOCTYPE html>
 <html lang="en-US" data-website-id="3" data-oe-company-name="ESMOD Jakarta">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="generator" content="Odoo" 
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="My Invoices and Payments | Portal" />
-    <meta property="og:site_name" content="ESMOD Jakarta" />
-
-
-
-    <meta property="og:url" content="http://esmod-edusis.edusis.co.id/my/invoices" />
-
-
-
-    <meta property="og:image" content="http://esmod-edusis.edusis.co.id/web/image/website/3/logo?unique=67a48c1" />
-
-
-
-
-
-
-
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <meta name="twitter:title" content="My Invoices and Payments | Portal" />
-
-    <meta name="twitter:image"
-        content="http://esmod-edusis.edusis.co.id/web/image/website/3/logo/300x300?unique=67a48c1" />
-
-
-
-
-
-
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-
-
-
-    <title> My Invoices and Payments | Portal </title>
-    <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/3/favicon?unique=67a48c1" />
-    <link rel="preload" href="/web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font"
-        crossorigin="" />
-    <link type="text/css" rel="stylesheet" href="/web/content/2425-9b2a757/3/web.assets_common.css"
-        data-asset-xmlid="web.assets_common" data-asset-version="9b2a757" />
-    <link type="text/css" rel="stylesheet" href="/web/content/42291-ca2ac28/3/web.assets_frontend.css"
-        data-asset-xmlid="web.assets_frontend" data-asset-version="ca2ac28" />
-
-
-
-
-    <script id="web.layout.odooscript" type="text/javascript">
-        var odoo = {
-            csrf_token: "9373769e97dea9fa08d60e191d307f5b2eeb0095o1731463558",
-            debug: "",
-        };
-    </script>
-    <script type="text/javascript">
-        odoo.session_info = { "is_admin": false, "is_system": false, "is_website_user": false, "user_id": 4458, "is_frontend": true, "server_version": "14.0", "server_version_info": [14, 0, 0, "final", 0, ""], "translationURL": "/website/translations", "cache_hashes": { "translations": "5227498d9df4b403b0244c75aac21e0c091e50ce" }, "lang_url_code": "en" };
-        if (!/(^|;\s)tz=/.test(document.cookie)) {
-            const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
-            document.cookie = `tz=${userTZ}; path=/`;
-        }
-    </script>
-    <script defer="defer" type="text/javascript" src="/web/content/1106-a42ca0a/3/web.assets_common_minimal_js.js"
-        data-asset-xmlid="web.assets_common_minimal_js" data-asset-version="a42ca0a"></script>
-    <script defer="defer" type="text/javascript" src="/web/content/1107-fc96192/3/web.assets_frontend_minimal_js.js"
-        data-asset-xmlid="web.assets_frontend_minimal_js" data-asset-version="fc96192"></script>
-
-
-
-    <script defer="defer" type="text/javascript" data-src="/web/content/2427-1166c07/3/web.assets_common_lazy.js"
-        data-asset-xmlid="web.assets_common_lazy" data-asset-version="1166c07"></script>
-    <script defer="defer" type="text/javascript" data-src="/web/content/42292-6d0513d/3/web.assets_frontend_lazy.js"
-        data-asset-xmlid="web.assets_frontend_lazy" data-asset-version="6d0513d"></script>
-
-
-
-
-
-
-
-</head>
-
-<body class="">
-
-
-
-
-
-    <div id="wrapwrap" class="  o_portal ">
-
-        <main>
-
-
-
-
-
-
-
-
-            <div class="sidebar">
-                <div class="brand">
-                    <img src="/esmod_website/static/img/logo.png" alt="ESMOD" class="img-fluid" loading="lazy" />
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="generator" content="Odoo">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="My Invoices and Payments | Portal">
+        <meta property="og:site_name" content="ESMOD Jakarta">
+        <meta property="og:url" content="http://esmod-edusis.edusis.co.id/my/invoices">
+        <meta property="og:image" content="http://esmod-edusis.edusis.co.id/web/image/website/3/logo?unique=67a48c1">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="My Invoices and Payments | Portal">
+        <meta name="twitter:image" content="http://esmod-edusis.edusis.co.id/web/image/website/3/logo/300x300?unique=67a48c1">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <title> My Invoices and Payments | Portal</title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/3/favicon?unique=67a48c1">
+        <link
+            rel="preload"
+            href="/web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
+            as="font"
+            crossorigin=""
+        >
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="/web/content/2425-9b2a757/3/web.assets_common.css"
+            data-asset-xmlid="web.assets_common"
+            data-asset-version="9b2a757"
+        >
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="/web/content/42702-933af54/3/web.assets_frontend.css"
+            data-asset-xmlid="web.assets_frontend"
+            data-asset-version="933af54"
+        >
+        <script id="web.layout.odooscript" type="text/javascript">
+                        var odoo = {
+                            csrf_token: "ba560f2e294a1ceda908348e5a8cb420315d113do1735948779",
+                            debug: "",
+                        };
+        </script>
+        <script type="text/javascript">
+                    odoo.session_info = {"is_admin": false, "is_system": false, "is_website_user": false, "user_id": 4458, "is_frontend": true, "server_version": "14.0", "server_version_info": [14, 0, 0, "final", 0, ""], "translationURL": "/website/translations", "cache_hashes": {"translations": "5227498d9df4b403b0244c75aac21e0c091e50ce"}, "lang_url_code": "en"};
+                    if (!/(^|;\s)tz=/.test(document.cookie)) {
+                        const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                        document.cookie = `tz=${userTZ}; path=/`;
+                    }
+        </script>
+        <script
+            defer="defer"
+            type="text/javascript"
+            src="/web/content/1106-a42ca0a/3/web.assets_common_minimal_js.js"
+            data-asset-xmlid="web.assets_common_minimal_js"
+            data-asset-version="a42ca0a"
+        ></script>
+        <script
+            defer="defer"
+            type="text/javascript"
+            src="/web/content/1107-fc96192/3/web.assets_frontend_minimal_js.js"
+            data-asset-xmlid="web.assets_frontend_minimal_js"
+            data-asset-version="fc96192"
+        ></script>
+        <script
+            defer="defer"
+            type="text/javascript"
+            data-src="/web/content/2427-1166c07/3/web.assets_common_lazy.js"
+            data-asset-xmlid="web.assets_common_lazy"
+            data-asset-version="1166c07"
+        ></script>
+        <script
+            defer="defer"
+            type="text/javascript"
+            data-src="/web/content/42703-a7713ac/3/web.assets_frontend_lazy.js"
+            data-asset-xmlid="web.assets_frontend_lazy"
+            data-asset-version="a7713ac"
+        ></script>
+    </head>
+    <body class="">
+        <div id="wrapwrap" class="  o_portal ">
+            <main>
+                <div class="sidebar">
+                    <div class="brand">
+                        <img
+                            src="/esmod_website/static/img/logo.png"
+                            alt="ESMOD"
+                            class="img-fluid"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="menus">
+                        <a href="/my/invoices" class="active">Invoices</a>
+                    </div>
                 </div>
-                <div class="menus">
-
-
-                    <a href="/my/invoices" class="active">Invoices</a>
-                </div>
-            </div>
-            <div id="wrap" class="o_portal_wrap">
-
-
-                <div class="container-fluid mb24">
-
-
-
-
-
-                    <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
-
-
-
-                        <ol class="o_portal_submenu breadcrumb mb-0 py-2 flex-grow-1 row">
-                            <li class="breadcrumb-item ml-1"><a href="/my/home" aria-label="Home" title="Home"><i
-                                        class="fa fa-home"></i></a></li>
-
-
-
-
-
-
-                            <li class="breadcrumb-item active ">
-                                Invoices & Bills
-                            </li>
-
-
-
-
-
-                        </ol>
-
-
-
-
-
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="o_navbar_account_menu" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                    <img width="24" height="24" alt="" loading="eager"
-                                        src="data:image/png;base64,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"
-                                        class="rounded-circle o_object_fit_cover " />
-                                    <span class="">Melinda Sulaeman</span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="o_navbar_account_menu">
-                                    <a class="dropdown-item" href="/my/home">My Account</a>
-                                    <a class="dropdown-item" href="/my/security">Change Password</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="/web/session/logout?redirect=/">Logout</a>
-                                </div>
-                            </li>
-                        </ul>
-
-
-                    </nav>
-
-
-
-
-                    <div class="o_portal_pager text-center">
-
-
-                        <div class="toolbar">
-                            <nav
-                                class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
-
-                                <div class="nav flex-lg-row ml-auto">
-                                    <div class="form-inline">
-                                        <span class="mr-1 navbar-text">
-                                            <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                        </span>
-                                        <div class="btn-group">
-                                            <button id="portal_searchbar_sortby" data-toggle="dropdown"
-                                                class="btn btn-secondary btn-sm dropdown-toggle">
-                                                Due Date
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-
-                                                <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                    <span>Due Date</span>
-                                                </a>
-
-                                                <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                    <span>Invoice Date</span>
-                                                </a>
-
-                                                <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                    <span>Amount Due</span>
-                                                </a>
-
+                <div id="wrap" class="o_portal_wrap">
+                    <div class="container-fluid mb24">
+                        <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
+                            <ol class="o_portal_submenu breadcrumb mb-0 py-2 flex-grow-1 row">
+                                <li class="breadcrumb-item ml-1">
+                                    <a href="/my/home" aria-label="Home" title="Home">
+                                        <i class="fa fa-home"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active ">
+                                    Invoices & Bills
+                                </li>
+                            </ol>
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="o_navbar_account_menu"
+                                        role="button"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            alt=""
+                                            loading="eager"
+                                            src="data:image/png;base64,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"
+                                            class="rounded-circle o_object_fit_cover "
+                                        >
+                                        <span class="">Melinda Sulaeman</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="o_navbar_account_menu">
+                                        <a class="dropdown-item" href="/my/home">My Account</a>
+                                        <a class="dropdown-item" href="/my/security">Change Password</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="/web/session/logout?redirect=/">Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="o_portal_pager text-center">
+                            <div class="toolbar">
+                                <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
+                                    <div class="nav flex-lg-row ml-auto">
+                                        <div class="form-inline">
+                                            <span class="mr-1 navbar-text">
+                                                <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="btn-group">
+                                                <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
+                                                    Due Date
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
+                                                    <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
+                                                        <span>Due Date</span>
+                                                    </a>
+                                                    <a href="/my/invoices?sortby=date" class="dropdown-item">
+                                                        <span>Invoice Date</span>
+                                                    </a>
+                                                    <a href="/my/invoices?sortby=amount" class="dropdown-item">
+                                                        <span>Amount Due</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-inline ml-sm-3">
+                                            <span class="mr-1 navbar-text">
+                                                <i class="fa fa-filter" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="btn-group">
+                                                <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
+                                                    Unpaid
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
+                                                    <a href="/my/invoices?filterby=all" class="dropdown-item">
+                                                        <span>All</span>
+                                                    </a>
+                                                    <a href="/my/invoices?filterby=paid" class="dropdown-item">
+                                                        <span>Paid</span>
+                                                    </a>
+                                                    <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
+                                                        <span>Unpaid</span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-inline ml-sm-3">
-                                        <span class="mr-1 navbar-text">
-                                            <i class="fa fa-filter" aria-hidden="true"></i>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="border rounded border-top-0  table-responsive-lg">
+                            <table class="table rounded mb-0 bg-white o_portal_my_doc_table">
+                                <div class="mb-3">
+                                    <button alt="Pay Now" class="btn btn-md btn-primary pull-left" id="go_payment">
+                                        <span>
+                                            <i class="fa fa-arrow-circle-right"></i>
+                                            Pay Selected Invoice
                                         </span>
-                                        <div class="btn-group">
-                                            <button id="portal_searchbar_filters" data-toggle="dropdown"
-                                                class="btn btn-secondary btn-sm dropdown-toggle">
-                                                Unpaid
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-
-                                                <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                    <span>All</span>
-                                                </a>
-
-                                                <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                    <span>Paid</span>
-                                                </a>
-
-                                                <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                    <span>Unpaid</span>
-                                                </a>
-
-                                            </div>
-                                        </div>
+                                    </button>
+                                    <div>
+                                        <small style="vertical-align: -webkit-baseline-middle;">
+                                            &nbsp;  For multiple invoice payment please select invoices and click on Pay Selected Invoice.
+                                        </small>
                                     </div>
-
-
                                 </div>
-
-                            </nav>
+                                <thead class="thead-dark">
+                                    <tr class="active">
+                                        <th id="my_invoices">
+                                            <span>#</span>
+                                        </th>
+                                        <th class="text-left">Invoice #</th>
+                                        <th class="text-right">Amount</th>
+                                        <th class="text-left">Payment</th>
+                                        <th class="text-left">Invoice Date</th>
+                                        <th class="text-left">Due Date</th>
+                                        <th class="text-left">Payment Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="638"
+                                                    data-amount="450000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/638?access_token=ea2927ea-b157-4706-93ba-dca75ab9ab87" title="INV/2023/11/0013">
+                                                INV/2023/11/0013
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">450,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/638?access_token=ea2927ea-b157-4706-93ba-dca75ab9ab87#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>10 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="639"
+                                                    data-amount="400000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/639?access_token=3c2e3f33-2ad9-42dd-84e6-ae984526c644" title="INV/2023/11/0014">
+                                                INV/2023/11/0014
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">400,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/639?access_token=3c2e3f33-2ad9-42dd-84e6-ae984526c644#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>13 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="640"
+                                                    data-amount="450000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/640?access_token=aef54b50-631e-4dbd-8615-3a3baae07ae1" title="INV/2023/11/0015">
+                                                INV/2023/11/0015
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">450,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/640?access_token=aef54b50-631e-4dbd-8615-3a3baae07ae1#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>16 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="641"
+                                                    data-amount="350000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/641?access_token=72d796b6-0c17-4727-87b9-9ce31bd0d77e" title="INV/2023/11/0016">
+                                                INV/2023/11/0016
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">350,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/641?access_token=72d796b6-0c17-4727-87b9-9ce31bd0d77e#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>19 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="642"
+                                                    data-amount="300000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/642?access_token=e3b0a950-a03b-40e5-bb53-5d9391807960" title="INV/2023/11/0017">
+                                                INV/2023/11/0017
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">300,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/642?access_token=e3b0a950-a03b-40e5-bb53-5d9391807960#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>22 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="643"
+                                                    data-amount="450000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/643?access_token=af6afe3e-9e50-4f58-a190-9a3fefb39a6c" title="INV/2023/11/0018">
+                                                INV/2023/11/0018
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">450,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/643?access_token=af6afe3e-9e50-4f58-a190-9a3fefb39a6c#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>25 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="644"
+                                                    data-amount="400000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/644?access_token=5076d21b-7d86-41f6-8705-09efb461b46b" title="INV/2023/11/0019">
+                                                INV/2023/11/0019
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">400,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/644?access_token=5076d21b-7d86-41f6-8705-09efb461b46b#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>28 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="645"
+                                                    data-amount="350000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/645?access_token=bb585674-db90-43a5-9fa1-b45a0f893507" title="INV/2023/11/0020">
+                                                INV/2023/11/0020
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">350,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/645?access_token=bb585674-db90-43a5-9fa1-b45a0f893507#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>30 Nov 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="646"
+                                                    data-amount="450000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/646?access_token=cef82e7d-5166-4f87-91bf-5b77f6dcac0c" title="INV/2023/11/0021">
+                                                INV/2023/11/0021
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">450,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/646?access_token=cef82e7d-5166-4f87-91bf-5b77f6dcac0c#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>01 Dec 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oe_checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    class="pay"
+                                                    data-id="647"
+                                                    data-amount="450000.0"
+                                                    data-currency_id="12"
+                                                >
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="/my/invoices/647?access_token=a9d88dda-89e6-45de-8b90-2ebd0f6eb646" title="INV/2023/11/0022">
+                                                INV/2023/11/0022
+                                            </a>
+                                        </td>
+                                        <td class="text-right">
+                                            <span data-oe-type="monetary" data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
+                                                <span class="oe_currency_value">450,000</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-left">
+                                            <a
+                                                title="Pay Now"
+                                                aria-label="Pay now"
+                                                class="btn btn-sm btn-primary"
+                                                role="button"
+                                                href="/my/invoices/647?access_token=a9d88dda-89e6-45de-8b90-2ebd0f6eb646#portal_pay"
+                                            >
+                                                <i class="fa fa-arrow-circle-right"></i>
+                                                <span class="d-md-inline"> Pay Now</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <span>09 Nov 2023</span>
+                                        </td>
+                                        <td class="d-md-table-cell">
+                                            <span>04 Dec 2023</span>
+                                        </td>
+                                        <td class="tx_status">
+                                            <span class="badge badge-pill badge-info">
+                                                <i
+                                                    class="fa fa-fw fa-clock-o"
+                                                    aria-label="Opened"
+                                                    title="Opened"
+                                                    role="img"
+                                                ></i>
+                                                <span class="d-md-inline"> Waiting for Payment</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-
-
                     </div>
-                    <div class="border rounded border-top-0  table-responsive-lg">
-                        <table class="table rounded mb-0 bg-white o_portal_my_doc_table">
-
-                            <thead class="thead-dark">
-                                <tr class="active">
-                                    <th class="text-left">Invoice #</th>
-                                    <th class="text-right">Amount</th>
-                                    <th class="text-left">Payment</th>
-                                    <th class="text-left">Invoice Date</th>
-                                    <th class="text-left">Due Date</th>
-                                    <th class="text-left">Payment Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/638?access_token=ea2927ea-b157-4706-93ba-dca75ab9ab87"
-                                            title="INV/2023/11/0013">
-                                            INV/2023/11/0013
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">450,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/638?access_token=ea2927ea-b157-4706-93ba-dca75ab9ab87#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>10 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/639?access_token=3c2e3f33-2ad9-42dd-84e6-ae984526c644"
-                                            title="INV/2023/11/0014">
-                                            INV/2023/11/0014
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">400,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/639?access_token=3c2e3f33-2ad9-42dd-84e6-ae984526c644#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>13 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/640?access_token=aef54b50-631e-4dbd-8615-3a3baae07ae1"
-                                            title="INV/2023/11/0015">
-                                            INV/2023/11/0015
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">450,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/640?access_token=aef54b50-631e-4dbd-8615-3a3baae07ae1#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>16 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/641?access_token=72d796b6-0c17-4727-87b9-9ce31bd0d77e"
-                                            title="INV/2023/11/0016">
-                                            INV/2023/11/0016
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">350,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/641?access_token=72d796b6-0c17-4727-87b9-9ce31bd0d77e#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>19 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/642?access_token=e3b0a950-a03b-40e5-bb53-5d9391807960"
-                                            title="INV/2023/11/0017">
-                                            INV/2023/11/0017
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">300,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/642?access_token=e3b0a950-a03b-40e5-bb53-5d9391807960#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>22 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/643?access_token=af6afe3e-9e50-4f58-a190-9a3fefb39a6c"
-                                            title="INV/2023/11/0018">
-                                            INV/2023/11/0018
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">450,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/643?access_token=af6afe3e-9e50-4f58-a190-9a3fefb39a6c#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>25 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/644?access_token=5076d21b-7d86-41f6-8705-09efb461b46b"
-                                            title="INV/2023/11/0019">
-                                            INV/2023/11/0019
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">400,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/644?access_token=5076d21b-7d86-41f6-8705-09efb461b46b#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>28 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/645?access_token=bb585674-db90-43a5-9fa1-b45a0f893507"
-                                            title="INV/2023/11/0020">
-                                            INV/2023/11/0020
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">350,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/645?access_token=bb585674-db90-43a5-9fa1-b45a0f893507#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>30 Nov 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/646?access_token=cef82e7d-5166-4f87-91bf-5b77f6dcac0c"
-                                            title="INV/2023/11/0021">
-                                            INV/2023/11/0021
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">450,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/646?access_token=cef82e7d-5166-4f87-91bf-5b77f6dcac0c#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>01 Dec 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/647?access_token=a9d88dda-89e6-45de-8b90-2ebd0f6eb646"
-                                            title="INV/2023/11/0022">
-                                            INV/2023/11/0022
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">450,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/647?access_token=a9d88dda-89e6-45de-8b90-2ebd0f6eb646#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>04 Dec 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <a href="/my/invoices/648?access_token=551bb593-e6b8-41ca-baa9-fc5fb5fec14d"
-                                            title="INV/2023/11/0023">
-                                            INV/2023/11/0023
-                                        </a>
-                                    </td>
-                                    <td class="text-right"><span data-oe-type="monetary"
-                                            data-oe-expression="-invoice.amount_residual if invoice.move_type == 'out_refund' else invoice.amount_residual">Rp
-                                            <span class="oe_currency_value">196,350,000</span></span></td>
-                                    <td class="text-left">
-
-
-                                        <a title="Pay Now" aria-label="Pay now" class="btn btn-sm btn-primary"
-                                            role="button"
-                                            href="/my/invoices/648?access_token=551bb593-e6b8-41ca-baa9-fc5fb5fec14d#portal_pay">
-                                            <i class="fa fa-arrow-circle-right"></i><span class="d-md-inline"> Pay
-                                                Now</span>
-                                        </a>
-                                    </td>
-
-                                    <td><span>09 Nov 2023</span>
-                                    </td>
-                                    <td class="d-md-table-cell">
-                                        <span>07 Dec 2023</span>
-                                    </td>
-                                    <td class="tx_status">
-
-                                        <span class="badge badge-pill badge-info"><i class="fa fa-fw fa-clock-o"
-                                                aria-label="Opened" title="Opened" role="img"></i><span
-                                                class="d-md-inline"> Waiting for Payment</span></span>
-
-
-
-
-                                    </td>
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-                    </div>
-
-
-
                 </div>
-            </div>
-
-        </main>
-        <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc ">
-            <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
-                <div class="py-3 container-fluid">
-                    <div class="row">
-                        <div class="col-sm text-center text-sm-left text-muted">
-
-
-
-                            <span class="o_footer_copyright_name mr-2">
-                                &copy;
-                                ESMOD Jakarta
-                                2023
-                            </span>
-                            <span class="social-media-container">
-                                <a href="https://www.facebook.com/ESMOD-Jakarta-19882372881/" target="_blank"><i
-                                        class="fa fa-facebook"> </i></a>
-                                <a href="https://twitter.com/ESMODjakarta" target="_blank"><i class="fa fa-twitter">
-                                    </i></a>
-                                <a href="https://www.instagram.com/esmodjakarta/" target="_blank"><i
-                                        class="fa fa-instagram"> </i></a>
-                                <a href="https://www.youtube.com/channel/UCFK9326GANeMVlE2A45z45A?feature=results_main"
-                                    target="_blank"><i class="fa fa-youtube-play"> </i></a>
-                            </span>
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                        <div class="col-sm text-center text-sm-right o_not_editable">
-                            <span></span>
+            </main>
+            <footer
+                id="bottom"
+                data-anchor="true"
+                data-name="Footer"
+                class="o_footer o_colored_level o_cc "
+            >
+                <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
+                    <div class="py-3 container-fluid">
+                        <div class="row">
+                            <div class="col-sm text-center text-sm-left text-muted">
+                                <span class="o_footer_copyright_name mr-2">
+                                    &copy;
+                    ESMOD Jakarta
+                    2024
+                                </span>
+                                <span class="social-media-container">
+                                    <a href="https://www.facebook.com/ESMOD-Jakarta-19882372881/" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://twitter.com/ESMODjakarta" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/esmodjakarta/" target="_blank">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCFK9326GANeMVlE2A45z45A?feature=results_main" target="_blank">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="col-sm text-center text-sm-right o_not_editable">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-
-
-    </div>
-
-
-
-
-</body>
-
+            </footer>
+        </div>
+    </body>
 </html>

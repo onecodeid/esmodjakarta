@@ -164,6 +164,12 @@ body {
   .navbar-nav li.nav-item :hover a, .navbar-nav li.nav-item :hover span {
     color: black !important; }
 
+.sidebar {
+  position: relative !important; }
+
+.sidebar ~ div#wrap {
+  margin-left: 0px !important; }
+
 /* ------------------------------------------------------------------------------
  *
  *  # Page header

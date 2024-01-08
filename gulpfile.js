@@ -63,6 +63,15 @@ gulp.task('include', () => {
     .pipe(gulp.dest('./public'));
 });
 
+gulp.task('includev2', () => {
+  return gulp.src('./src/html/v2/*.html')
+    .pipe(include_file({
+      prefix: "@@",
+      basepath: "@file"
+    }))
+    .pipe(gulp.dest('./public/v2'));
+});
+
 // Task to serve the Vue app using BrowserSync
 function serve() {
   // Serve files from the root directory of your Vue project
@@ -95,8 +104,10 @@ function serve() {
     // gulp.watch('./src/html/partials/*.html', gulp.series('include'));
     // gulp.watch('./src/html/*.html', gulp.series('include'));
     gulp.watch('./src/html/', gulp.series('include'));
+    gulp.watch('./src/html/v2', gulp.series('includev2'));
     // gulp.watch(paths.srcScss, gulp.series('compile-scss', 'minify-css'));
     gulp.watch('./public/*.html').on('change', browserSync.reload);
+    gulp.watch('./public/v2/*.html').on('change', browserSync.reload);
     gulp.watch('./public/assets/css/*.css').on('change', browserSync.stream);
     gulp.watch('*.html').on('change', browserSync.reload);
 //   gulp.watch('_modules/misc/*.js', scripts); 

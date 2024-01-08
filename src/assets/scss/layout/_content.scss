@@ -140,3 +140,13 @@ body {
 // li.nav-item:hover a,li.nav-item:hover span {
 //     color: #fff!important
 // }
+
+// v2
+.sidebar {
+    position: relative !important;
+    
+}
+
+.sidebar~div#wrap {
+    margin-left: 0px !important;
+}
