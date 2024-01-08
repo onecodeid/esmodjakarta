@@ -85,9 +85,12 @@
 >
 <!-- CSS BOOTSTRAP END -->
 <!-- JS BOOTSTRAP -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../assets/js/bootstrap_responsive_toolkit.js"></script>
 
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
@@ -101,29 +104,52 @@
 <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/layout.css" rel="stylesheet" type="text/css">
 <style href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"></style>
+<link href="../assets/css/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 
         <script src="../assets/js/invoice_archive.js"></script>
     </head>
     <body class="">
-      <div id="wrapwrap" class="  o_portal ">
-          <main class="d-flex">
-            <div class="sidebar d-flex">
+        <div id="wrapwrap" class="  o_portal ">
+            <main class="d-lg-flex">
+                <div class="sidebar d-lg-flex sidebar-main sidebar-expand-lg">
     <div class="brand">
-        <img
+        
+
+        <div class="d-flex flex-1">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-paragraph-justify3"></i>
+            </button> -->
+            <div class="d-flex">
+                <img
             src="../assets/img/logo.png"
             alt="ESMOD"
             class="img-fluid"
             loading="lazy"
         >
+            </div>
+            
+            <button class="navbar-toggler sidebar-mobile-main-toggle d-xl-none" type="button">
+                <!-- <i class="icon-transmission"></i> -->
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+        </div>
     </div>
     <div class="menus">
         <a href="/my/invoices" class="active">Invoices</a>
     </div>
 </div>
-              <div id="wrap" class="o_portal_wrap d-flex flex-grow-1">
-                  <div class="container-fluid mb24">
-
-                    <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
+                <div id="wrap" class="o_portal_wrap d-lg-flex flex-grow-1">
+                    <div class="container-fluid mb24">
+                        <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
+    <div class="d-flex flex-1 d-xl-none">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+            <i class="icon-paragraph-justify3"></i>
+        </button> -->
+        <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+            <!-- <i class="icon-transmission"></i> -->
+            <i class="icon-paragraph-justify3"></i>
+        </button>
+    </div>
     <ol class="o_portal_submenu breadcrumb mb-0 py-2 flex-grow-1 row">
         <li class="breadcrumb-item ml-1">
             <a href="/my/home" aria-label="Home" title="Home">
@@ -164,217 +190,222 @@
         </li>
     </ul>
 </nav>
-
-                      <div class="o_portal_pager text-center">
-                          <div class="toolbar">
-                              <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
-                                  <div class="nav flex-lg-row ml-auto">
-                                      <div class="form-inline">
-                                          <span class="mr-1 navbar-text">
-                                              <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                          </span>
-                                          <div class="btn-group">
-                                              <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                  Due Date
-                                              </button>
-                                              <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-                                                  <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                      <span>Due Date</span>
-                                                  </a>
-                                                  <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                      <span>Invoice Date</span>
-                                                  </a>
-                                                  <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                      <span>Amount Due</span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="form-inline ml-sm-3">
-                                          <span class="mr-1 navbar-text">
-                                              <i class="fa fa-filter" aria-hidden="true"></i>
-                                          </span>
-                                          <div class="btn-group">
-                                              <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                  Unpaid
-                                              </button>
-                                              <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-                                                  <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                      <span>All</span>
-                                                  </a>
-                                                  <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                      <span>Paid</span>
-                                                  </a>
-                                                  <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                      <span>Unpaid</span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </nav>
-                          </div>
-                      </div>
-                      <div class="border rounded border-top-0  table-responsive-lg">
-                          
-                        <table class="table table-lg invoice-archive">
-                          <thead>
-                            <tr>
-                              <th># Invoice</th>
-                                                <th>Amount</th>
-                                                <th>Payment</th>
-                                                <th>Invoice date</th>
-                                                <th>Due date</th>
-                                      
-                                      <th>Payment Status</th>
-                                      
-                                      <!-- <th class="text-center">Actions</th> -->
-                                  </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>#0025</td>
-                                                <td>
-                                        <h6 class="mb-0 font-weight-bold">$17,890 <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span></h6>
-                                      </td>
-                                                <td><span class="badge badge-danger">Pay Now</span></td>
-                                                <td>
-                                        April 18, 2015
-                                      </td>
-                                                <td>
-                                        April 21, 2015
-                                      </td>
-                                      
-                                      <td>
-                                        <span class="badge badge-success">Paid on Mar 16, 2015</span>
-                                      </td>
-                                      
-                              <!-- <td class="text-center">
-                                <div class="list-icons list-icons-extended">
-                                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i class="icon-file-eye"></i></a>
-                                  <div class="dropdown">
-                                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-file-text2"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
-                                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
-                                      <div class="dropdown-divider"></div>
-                                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
-                                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                        <!-- <div class="o_portal_pager text-center">
+                            <div class="toolbar">
+                                <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
+                                    <div class="nav flex-lg-row ml-auto">
+                                        <div class="form-inline">
+                                            <span class="mr-1 navbar-text">
+                                                <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="btn-group">
+                                                <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
+                                                    Due Date
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
+                                                    <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
+                                                        <span>Due Date</span>
+                                                    </a>
+                                                    <a href="/my/invoices?sortby=date" class="dropdown-item">
+                                                        <span>Invoice Date</span>
+                                                    </a>
+                                                    <a href="/my/invoices?sortby=amount" class="dropdown-item">
+                                                        <span>Amount Due</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-inline ml-sm-3">
+                                            <span class="mr-1 navbar-text">
+                                                <i class="fa fa-filter" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="btn-group">
+                                                <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
+                                                    Unpaid
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
+                                                    <a href="/my/invoices?filterby=all" class="dropdown-item">
+                                                        <span>All</span>
+                                                    </a>
+                                                    <a href="/my/invoices?filterby=paid" class="dropdown-item">
+                                                        <span>Paid</span>
+                                                    </a>
+                                                    <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
+                                                        <span>Unpaid</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                </div>
-                              </td> -->
-                                  </tr>
-                            <tr>
-                              <td>#0025</td>
-                                                <td>
-                                        <h6 class="mb-0 font-weight-bold">$17,890 <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span></h6>
-                                      </td>
-                                                <td><span class="badge badge-danger">Pay Now</span></td>
-                                                <td>
-                                        April 18, 2015
-                                      </td>
-                                                <td>
-                                        April 21, 2015
-                                      </td>
-                                      
-                                      <td>
-                                        <span class="badge badge-primary">27 days</span>
-                                      </td>
-                                      
-                              <!-- <td class="text-center">
-                                <div class="list-icons list-icons-extended">
-                                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i class="icon-file-eye"></i></a>
-                                  <div class="dropdown">
-                                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-file-text2"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
-                                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
-                                      <div class="dropdown-divider"></div>
-                                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
-                                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                                </nav>
+                            </div>
+                        </div> -->
+                        <div class="content p-1 p-md-3">
+                            <!-- Invoice archive -->
+                            <div class="card">
+                                <div class="card-header bg-transparent header-elements-inline justify-content-center justify-content-md-end">
+                                  <div class="form-inline">
+                                    <span class="mr-1 navbar-text">
+                                        <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="btn-group">
+                                        <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
+                                            Due Date
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
+                                            <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
+                                                <span>Due Date</span>
+                                            </a>
+                                            <a href="/my/invoices?sortby=date" class="dropdown-item">
+                                                <span>Invoice Date</span>
+                                            </a>
+                                            <a href="/my/invoices?sortby=amount" class="dropdown-item">
+                                                <span>Amount Due</span>
+                                            </a>
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </td> -->
-                                  </tr>
-                            <tr>
-                              <td>#0025</td>
-                                                <td>
-                                        <h6 class="mb-0 font-weight-bold">$17,890 <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span></h6>
-                                      </td>
-                                                <td><span class="badge badge-danger">Pay Now</span></td>
-                                                <td>
-                                        April 18, 2015
-                                      </td>
-                                                <td>
-                                        April 21, 2015
-                                      </td>
-                                      
-                                      <td>
-                                        <span class="badge badge-warning">5 days</span>
-                                      </td>
-                                      
-                              <!-- <td class="text-center">
-                                <div class="list-icons list-icons-extended">
-                                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i class="icon-file-eye"></i></a>
-                                  <div class="dropdown">
-                                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-file-text2"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
-                                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
-                                      <div class="dropdown-divider"></div>
-                                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
-                                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                                <div class="form-inline ml-sm-3">
+                                    <span class="mr-1 navbar-text">
+                                        <i class="fa fa-filter" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="btn-group">
+                                        <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
+                                            Unpaid
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
+                                            <a href="/my/invoices?filterby=all" class="dropdown-item">
+                                                <span>All</span>
+                                            </a>
+                                            <a href="/my/invoices?filterby=paid" class="dropdown-item">
+                                                <span>Paid</span>
+                                            </a>
+                                            <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
+                                                <span>Unpaid</span>
+                                            </a>
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </td> -->
-                                  </tr>
-                                        </tbody>
-                                    </table>
-
-                      </div>
-                  </div>
-              </div>
-          </main>
-          <footer
-              id="bottom"
-              data-anchor="true"
-              data-name="Footer"
-              class="o_footer o_colored_level o_cc "
-          >
-              <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
-                  <div class="py-3 container-fluid">
-                      <div class="row">
-                          <div class="col-sm text-center text-sm-left text-muted">
-                              <span class="o_footer_copyright_name mr-2">
-                                  &copy;
-                  ESMOD Jakarta
-                  2024
-                              </span>
-                              <span class="social-media-container">
-                                  <a href="https://www.facebook.com/ESMOD-Jakarta-19882372881/" target="_blank">
-                                      <i class="fa fa-facebook"></i>
-                                  </a>
-                                  <a href="https://twitter.com/ESMODjakarta" target="_blank">
-                                      <i class="fa fa-twitter"></i>
-                                  </a>
-                                  <a href="https://www.instagram.com/esmodjakarta/" target="_blank">
-                                      <i class="fa fa-instagram"></i>
-                                  </a>
-                                  <a href="https://www.youtube.com/channel/UCFK9326GANeMVlE2A45z45A?feature=results_main" target="_blank">
-                                      <i class="fa fa-youtube-play"></i>
-                                  </a>
-                              </span>
-                          </div>
-                          <div class="col-sm text-center text-sm-right o_not_editable">
-                              <span></span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </footer>
-      </div>
-  </body>
+                                </div>
+                                <table class="table table-lg invoice-archive">
+                                    <thead>
+                                        <tr>
+                                            <th># Invoice</th>
+                                            <th>Amount</th>
+                                            <th>Payment</th>
+                                            <th>Invoice date</th>
+                                            <th>Due date</th>
+                                            <th>Payment Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#0025</td>
+                                            <td>
+                                                <h6 class="mb-0 font-weight-bold">
+                                                    $17,890
+                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
+                                                </h6>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-danger">Pay Now</span>
+                                            </td>
+                                            <td>
+                                                April 18, 2015
+                                            </td>
+                                            <td>
+                                                April 21, 2015
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success">Paid on Mar 16, 2015</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#0025</td>
+                                            <td>
+                                                <h6 class="mb-0 font-weight-bold">
+                                                    $17,890
+                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
+                                                </h6>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-danger">Pay Now</span>
+                                            </td>
+                                            <td>
+                                                April 18, 2015
+                                            </td>
+                                            <td>
+                                                April 21, 2015
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-primary">27 days</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#0025</td>
+                                            <td>
+                                                <h6 class="mb-0 font-weight-bold">
+                                                    $17,890
+                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
+                                                </h6>
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-danger">Pay Now</span>
+                                            </td>
+                                            <td>
+                                                April 18, 2015
+                                            </td>
+                                            <td>
+                                                April 21, 2015
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-warning">5 days</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer
+                id="bottom"
+                data-anchor="true"
+                data-name="Footer"
+                class="o_footer o_colored_level o_cc "
+            >
+                <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
+    <div class="py-3 container-fluid">
+        <div class="row">
+            <div class="col-sm text-center text-sm-left text-muted">
+                <span class="o_footer_copyright_name mr-2">
+                  &copy;
+  ESMOD Jakarta
+  2024
+                </span>
+                <span class="social-media-container">
+                    <a href="https://www.facebook.com/ESMOD-Jakarta-19882372881/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/ESMODjakarta" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/esmodjakarta/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCFK9326GANeMVlE2A45z45A?feature=results_main" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="col-sm text-center text-sm-right o_not_editable">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+            </footer>
+        </div>
+    </body>
 </html>
