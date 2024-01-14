@@ -106,7 +106,35 @@
 <style href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"></style>
 <link href="../assets/css/icomoon/styles.min.css" rel="stylesheet" type="text/css">
 
-        <script src="../assets/js/invoice_archive.js"></script>
+
+        <!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                  loop:true,
+                  margin:10,
+                  nav:false,
+                  responsive:{
+                    0:{
+                      items:1
+                    },
+                    576:{
+                      items:2
+                    },
+                    768:{
+                        items:3
+                    },
+                    992:{
+                      items:6
+                    }
+                  }
+                });
+              });
+        </script>
     </head>
     <body class="">
         <div id="wrapwrap" class="  o_portal ">
@@ -197,181 +225,188 @@
         </li>
     </ul>
 </nav>
-                        <!-- <div class="o_portal_pager text-center">
-                            <div class="toolbar">
-                                <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
-                                    <div class="nav flex-lg-row ml-auto">
-                                        <div class="form-inline">
-                                            <span class="mr-1 navbar-text">
-                                                <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                            </span>
-                                            <div class="btn-group">
-                                                <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                    Due Date
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-                                                    <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                        <span>Due Date</span>
-                                                    </a>
-                                                    <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                        <span>Invoice Date</span>
-                                                    </a>
-                                                    <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                        <span>Amount Due</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-inline ml-sm-3">
-                                            <span class="mr-1 navbar-text">
-                                                <i class="fa fa-filter" aria-hidden="true"></i>
-                                            </span>
-                                            <div class="btn-group">
-                                                <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                    Unpaid
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-                                                    <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                        <span>All</span>
-                                                    </a>
-                                                    <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                        <span>Paid</span>
-                                                    </a>
-                                                    <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                        <span>Unpaid</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div> -->
                         <div class="content p-1 p-md-3">
-                            <!-- Invoice archive -->
-                            <div class="card">
-                                <div class="card-header bg-transparent header-elements-inline justify-content-center justify-content-md-end">
-                                  <div class="form-inline">
-                                    <span class="mr-1 navbar-text">
-                                        <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="btn-group">
-                                        <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                            Due Date
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-                                            <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                <span>Due Date</span>
-                                            </a>
-                                            <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                <span>Invoice Date</span>
-                                            </a>
-                                            <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                <span>Amount Due</span>
-                                            </a>
+                            <!-- Vertical cards -->
+					<div class="row">
+                        <div class="col-12">
+                            <div class="owl-carousel">
+                                <!-- MONDAY-->
+                                <div class="item">
+                                    <div class="card bg-danger bg-red card-body text-white has-bg-image py-1">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <h5 class="mb-0 text-center">MONDAY</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center pb-2">
+                                            <h6 class="d-flex font-weight-semibold flex-nowrap mb-0">08.00 - 10.20</h6>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="mb-3">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Fashion Business Accounting
+                                                </h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0 text-secondary">CCBU-23
+                                                </h6>
+                                            </div>
+        
+                                            <div class="mb-1">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Marco Rene Humolta</h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0">127 Class Room</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center pb-2">
+                                            <h6 class="d-flex font-weight-semibold flex-nowrap mb-0">11.20 - 14.40</h6>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="mb-3">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Fashion Marketing
+                                                </h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0 text-secondary">CCBU-35
+                                                </h6>
+                                            </div>
+        
+                                            <div class="mb-1">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Angela Annable Agus</h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0">127 Class Room</h6>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-inline ml-sm-3">
-                                    <span class="mr-1 navbar-text">
-                                        <i class="fa fa-filter" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="btn-group">
-                                        <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                            Unpaid
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-                                            <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                <span>All</span>
-                                            </a>
-                                            <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                <span>Paid</span>
-                                            </a>
-                                            <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                <span>Unpaid</span>
-                                            </a>
+
+                                <!-- TUESDAY -->
+                                <div class="item">
+                                    <div class="card card-body bg-danger text-white has-bg-image py-1">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <h5 class="mb-0 text-center">TUESDAY</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center pb-2">
+                                            <h6 class="d-flex font-weight-semibold flex-nowrap mb-0">09.00 - 10.40</h6>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="mb-3">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Fashion Communication
+                                                </h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0 text-secondary">CCBU-44
+                                                </h6>
+                                            </div>
+        
+                                            <div class="mb-1">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Nathalia Gunarian</h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0">122 Class Room</h6>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- WEDNESDAY -->
+                                <div class="item">
+                                    <div class="card card-body bg-danger text-white has-bg-image py-1">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <h5 class="mb-0 text-center">WEDNESDAY</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center pb-2">
+                                            <h6 class="d-flex font-weight-semibold flex-nowrap mb-0">08.40 - 10.20</h6>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="mb-3">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Pancasila Education
+                                                </h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0 text-secondary">CCBW-02
+                                                </h6>
+                                            </div>
+        
+                                            <div class="mb-1">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Reihan Putri</h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0">127 Class Room</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center pb-2">
+                                            <h6 class="d-flex font-weight-semibold flex-nowrap mb-0">10.40 - 12.20</h6>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="mb-3">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">English I
+                                                </h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0 text-secondary">CCBP-49
+                                                </h6>
+                                            </div>
+        
+                                            <div class="mb-1">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Rossy Adhystia</h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0">214 Class Room</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <table class="table table-lg invoice-archive">
-                                    <thead>
-                                        <tr>
-                                            <th># Invoice</th>
-                                            <th>Amount</th>
-                                            <th>Payment</th>
-                                            <th>Invoice date</th>
-                                            <th>Due date</th>
-                                            <th>Payment Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#0025</td>
-                                            <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
+
+                                <!-- THURSDAY -->
+                                <div class="item">
+                                    <div class="card card-body bg-danger text-white has-bg-image py-1">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <h5 class="mb-0 text-center">THURSDAY</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FRIDAY -->
+                                <div class="item">
+                                    <div class="card card-body bg-danger text-white has-bg-image py-1">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <h5 class="mb-0 text-center">FRIDAY</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center pb-2">
+                                            <h6 class="d-flex font-weight-semibold flex-nowrap mb-0">07.20 - 09.50</h6>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="mb-3">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Creative Industries
                                                 </h6>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-danger">Pay Now</span>
-                                            </td>
-                                            <td>
-                                                April 18, 2015
-                                            </td>
-                                            <td>
-                                                April 21, 2015
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success">Paid on Mar 16, 2015</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>#0025</td>
-                                            <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0 text-secondary">CCBW-06
                                                 </h6>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-danger">Pay Now</span>
-                                            </td>
-                                            <td>
-                                                April 18, 2015
-                                            </td>
-                                            <td>
-                                                April 21, 2015
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-primary">27 days</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>#0025</td>
-                                            <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
-                                                </h6>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-danger">Pay Now</span>
-                                            </td>
-                                            <td>
-                                                April 18, 2015
-                                            </td>
-                                            <td>
-                                                April 21, 2015
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-warning">5 days</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            </div>
+        
+                                            <div class="mb-1">
+                                                <h6 class="d-flex font-weight-regular flex-nowrap mb-0">Angelina</h6>
+                                                <h6 class="d-flex font-weight-light flex-nowrap mb-0">127 Class Room</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SATURDAY -->
+                                <div class="item">
+                                    <div class="card card-body bg-danger text-white has-bg-image py-1">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <h5 class="mb-0 text-center">SATURDAY</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
                         </div>
                     </div>
                 </div>

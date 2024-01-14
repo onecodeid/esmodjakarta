@@ -197,181 +197,136 @@
         </li>
     </ul>
 </nav>
-                        <!-- <div class="o_portal_pager text-center">
-                            <div class="toolbar">
-                                <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
-                                    <div class="nav flex-lg-row ml-auto">
-                                        <div class="form-inline">
-                                            <span class="mr-1 navbar-text">
-                                                <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                            </span>
-                                            <div class="btn-group">
-                                                <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                    Due Date
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-                                                    <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                        <span>Due Date</span>
-                                                    </a>
-                                                    <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                        <span>Invoice Date</span>
-                                                    </a>
-                                                    <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                        <span>Amount Due</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-inline ml-sm-3">
-                                            <span class="mr-1 navbar-text">
-                                                <i class="fa fa-filter" aria-hidden="true"></i>
-                                            </span>
-                                            <div class="btn-group">
-                                                <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                    Unpaid
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-                                                    <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                        <span>All</span>
-                                                    </a>
-                                                    <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                        <span>Paid</span>
-                                                    </a>
-                                                    <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                        <span>Unpaid</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div> -->
                         <div class="content p-1 p-md-3">
-                            <!-- Invoice archive -->
-                            <div class="card">
-                                <div class="card-header bg-transparent header-elements-inline justify-content-center justify-content-md-end">
-                                  <div class="form-inline">
-                                    <span class="mr-1 navbar-text">
-                                        <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="btn-group">
-                                        <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                            Due Date
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-                                            <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                <span>Due Date</span>
-                                            </a>
-                                            <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                <span>Invoice Date</span>
-                                            </a>
-                                            <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                <span>Amount Due</span>
-                                            </a>
+                            <!-- Inner container -->
+                            <div class="d-lg-flex align-items-lg-start">
+                                <!-- Right content -->
+                                <div class="tab-content flex-1">
+                                    <div class="tab-pane fade active show" id="dashboard">
+                                        <div class="card">
+                                            <div class="card-body p-1 p-md-3">
+                                                <div class="list-feed">
+                                                    <div class="list-feed-item border-warning">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="card border-left-3 border-left-danger rounded-left-0">
+                                                                    <div class="card-body">
+                                                                        <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+                                                                            <div>
+                                                                                <h6 class="font-weight-semibold d-none d-sm-block">Periode</h6>
+                                                                                <ul class="list list-unstyled mb-0">
+                                                                                    <li>Batch:
+                                                                                        <a href="#">
+                                                                                            <b>2023</b>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>Program:
+                                                                                        <span class="font-weight-semibold">Bisnis Kreatif (D4)</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="text-sm-right mb-0 mt-3 mt-sm-0 ml-auto">
+                                                                                <h6 class="font-weight-semibold">SEMESTER I</h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer justify-content-sm-between align-items-sm-center">
+                                                                        <div class="row">
+                                                                            <div class="col-12 col-sm-6 pr-sm-3">
+                                                                                <span>
+                                                                                    <span class="badge badge-mark border-danger mr-2"></span>
+                                                                                    Tagihan belum terbayar :
+                                                                                    <span class="font-weight-semibold text-danger d-none">Rp 0</span>
+                                                                                </span>
+                                                                                <div class="card-body pt-0 pb-2 pl-0 mt-2 pr-0">
+                                                                                    <div>
+                                                                                        <span class="float-right">Rp 300,000</span>
+                                                                                        Tuition Fee
+                                                                                    </div>
+                                                                                    <hr class="m-0 mt-2 line-dashed">
+                                                                                    <div class="font-weight-semibold mb-0 mt-2">
+                                                                                        <span class="float-right">Rp 300,000</span>
+                                                                                        Total
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-6 mt-3 mt-sm-0 pl-sm-3">
+                                                                                <span>
+                                                                                    <span class="badge badge-mark border-success mr-2"></span>
+                                                                                    Tagihan sudah terbayar :
+                                                                                    <span class="font-weight-semibold text-success">Rp 0</span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card card-body border-left-danger">
+                                                                    <div class="d-sm-flex flex-sm-wrap mb-1">
+                                                                        <div class="font-weight-semibold">Periode:</div>
+                                                                        <div class="ml-sm-auto mt-2 mt-sm-0">Semester 1</div>
+                                                                    </div>
+                                                                    <div class="d-sm-flex flex-sm-wrap mb-1">
+                                                                        <div class="font-weight-semibold">Batch:</div>
+                                                                        <div class="ml-sm-auto mt-2 mt-sm-0">2023</div>
+                                                                    </div>
+                                                                    <div class="d-sm-flex flex-sm-wrap mb-1">
+                                                                        <div class="font-weight-semibold">Program</div>
+                                                                        <div class="ml-sm-auto mt-2 mt-sm-0">Bisnis Kreatif (D4)</div>
+                                                                    </div>
+                                                                    <div class="progress mb-2" style="height: 0.125rem;">
+                                                                        <div class="progress-bar bg-indigo" style="width: 100%"></div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-12 col-md-6">
+                                                                            <div class="card bg-danger-100">
+                                                                                <div class="card-header text-center py-2 px-2">
+                                                                                    <h6 class="card-title text-danger">Tagihan Belum Dibayar</h6>
+                                                                                    <hr class="m-0 mt-1 line-dashed">
+                                                                                </div>
+                                                                                <div class="card-body pt-0 pb-2 px-2">
+                                                                                    <div>
+                                                                                        <span class="float-right">Rp 300,000</span>
+                                                                                        Tuition Fee
+                                                                                    </div>
+                                                                                    <hr class="m-0 mt-2 line-dashed">
+                                                                                    <div class="font-weight-semibold mb-0 mt-2">
+                                                                                        <span class="float-right">Rp 300,000</span>
+                                                                                        Total
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-md-6">
+                                                                            <div class="card bg-success-100">
+                                                                                <div class="card-header text-center py-2 px-2">
+                                                                                    <h6 class="card-title text-success">Tagihan Sudah Dibayar</h6>
+                                                                                    <hr class="m-0 mt-1 line-dashed">
+                                                                                </div>
+                                                                                <div class="card-body pt-0 pb-2 px-2">
+                                                                                    <div class="d-sm-flex flex-sm-wrap mb-1 justify-content-center text-muted">
+                                                                                        Tidak ada data
+                                                                                    </div>
+                                                                                    <hr class="m-0 mt-2 line-dashed">
+                                                                                    <div class="font-weight-semibold mb-0 mt-2">
+                                                                                        <span class="float-right">Rp 0</span>
+                                                                                        Total
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-inline ml-sm-3">
-                                    <span class="mr-1 navbar-text">
-                                        <i class="fa fa-filter" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="btn-group">
-                                        <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                            Unpaid
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-                                            <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                <span>All</span>
-                                            </a>
-                                            <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                <span>Paid</span>
-                                            </a>
-                                            <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                <span>Unpaid</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <table class="table table-lg invoice-archive">
-                                    <thead>
-                                        <tr>
-                                            <th># Invoice</th>
-                                            <th>Amount</th>
-                                            <th>Payment</th>
-                                            <th>Invoice date</th>
-                                            <th>Due date</th>
-                                            <th>Payment Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#0025</td>
-                                            <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
-                                                </h6>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-danger">Pay Now</span>
-                                            </td>
-                                            <td>
-                                                April 18, 2015
-                                            </td>
-                                            <td>
-                                                April 21, 2015
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success">Paid on Mar 16, 2015</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>#0025</td>
-                                            <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
-                                                </h6>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-danger">Pay Now</span>
-                                            </td>
-                                            <td>
-                                                April 18, 2015
-                                            </td>
-                                            <td>
-                                                April 21, 2015
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-primary">27 days</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>#0025</td>
-                                            <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
-                                                </h6>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-danger">Pay Now</span>
-                                            </td>
-                                            <td>
-                                                April 18, 2015
-                                            </td>
-                                            <td>
-                                                April 21, 2015
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-warning">5 days</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <!-- /right content -->
                             </div>
+                            <!-- /inner container -->
                         </div>
                     </div>
                 </div>

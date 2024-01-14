@@ -1,0 +1,39 @@
+<html lang="en-US" data-website-id="3" data-oe-company-name="ESMOD Jakarta">
+    <head>
+        @@include('./partials/head.html')
+        <script src="../assets/js/invoice_archive.js"></script>
+    </head>
+    <body class="">
+        <div id="wrapwrap" class="  o_portal ">
+            <main class="d-lg-flex">
+                @@include('./partials/sidebar.html')
+                <div id="wrap" class="o_portal_wrap d-lg-flex flex-grow-1">
+                    <div class="container-fluid mb24">
+                        @@include('./partials/navbar.html')
+                        <div class="content p-1 p-md-3">
+                            <!-- Inner container -->
+                            <div class="d-lg-flex align-items-lg-start">
+                                <!-- Right content -->
+                                <div class="tab-content flex-1">
+                                    <div class="tab-pane fade active show" id="profile">
+                                        @@include('./user_profile_profile.html')
+                                    </div>
+                                </div>
+                                <!-- /right content -->
+                            </div>
+                            <!-- /inner container -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer
+                id="bottom"
+                data-anchor="true"
+                data-name="Footer"
+                class="o_footer o_colored_level o_cc "
+            >
+                @@include('./partials/footer.html')
+            </footer>
+        </div>
+    </body>
+</html>

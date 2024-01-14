@@ -197,181 +197,177 @@
         </li>
     </ul>
 </nav>
-                        <!-- <div class="o_portal_pager text-center">
-                            <div class="toolbar">
-                                <nav class="navbar navbar-light navbar-expand-lg border py-0 mb-2 o_portal_navbar  mt-3 rounded">
-                                    <div class="nav flex-lg-row ml-auto">
-                                        <div class="form-inline">
-                                            <span class="mr-1 navbar-text">
-                                                <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                            </span>
-                                            <div class="btn-group">
-                                                <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                    Due Date
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-                                                    <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                        <span>Due Date</span>
-                                                    </a>
-                                                    <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                        <span>Invoice Date</span>
-                                                    </a>
-                                                    <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                        <span>Amount Due</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-inline ml-sm-3">
-                                            <span class="mr-1 navbar-text">
-                                                <i class="fa fa-filter" aria-hidden="true"></i>
-                                            </span>
-                                            <div class="btn-group">
-                                                <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                                    Unpaid
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-                                                    <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                        <span>All</span>
-                                                    </a>
-                                                    <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                        <span>Paid</span>
-                                                    </a>
-                                                    <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                        <span>Unpaid</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div> -->
                         <div class="content p-1 p-md-3">
-                            <!-- Invoice archive -->
+                            <!-- Inner container -->
+                            <!-- Invoice template -->
                             <div class="card">
-                                <div class="card-header bg-transparent header-elements-inline justify-content-center justify-content-md-end">
-                                  <div class="form-inline">
-                                    <span class="mr-1 navbar-text">
-                                        <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="btn-group">
-                                        <button id="portal_searchbar_sortby" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                            Due Date
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_sortby">
-                                            <a href="/my/invoices?sortby=duedate" class="dropdown-item active">
-                                                <span>Due Date</span>
-                                            </a>
-                                            <a href="/my/invoices?sortby=date" class="dropdown-item">
-                                                <span>Invoice Date</span>
-                                            </a>
-                                            <a href="/my/invoices?sortby=amount" class="dropdown-item">
-                                                <span>Amount Due</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-inline ml-sm-3">
-                                    <span class="mr-1 navbar-text">
-                                        <i class="fa fa-filter" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="btn-group">
-                                        <button id="portal_searchbar_filters" data-toggle="dropdown" class="btn btn-secondary btn-sm dropdown-toggle">
-                                            Unpaid
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="portal_searchbar_filters">
-                                            <a href="/my/invoices?filterby=all" class="dropdown-item">
-                                                <span>All</span>
-                                            </a>
-                                            <a href="/my/invoices?filterby=paid" class="dropdown-item">
-                                                <span>Paid</span>
-                                            </a>
-                                            <a href="/my/invoices?filterby=unpaid" class="dropdown-item active">
-                                                <span>Unpaid</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <table class="table table-lg invoice-archive">
+                                <!-- <div class="card-header bg-transparent header-elements-inline">
+							<h6 class="card-title">Task manager</h6>
+						</div> -->
+                                <table class="table tasks-list table-lg">
                                     <thead>
                                         <tr>
-                                            <th># Invoice</th>
-                                            <th>Amount</th>
-                                            <th>Payment</th>
-                                            <th>Invoice date</th>
-                                            <th>Due date</th>
-                                            <th>Payment Status</th>
+                                            <th>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label p-0"></span>
+                                                </label>
+                                            </th>
+                                            <th data-priority="1">Task Description</th>
+                                            <th data-priority="2">SKS</th>
+                                            <th>Latest update</th>
+                                            <th>Quota</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>#0025</td>
                                             <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
-                                                </h6>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label p-0"></span>
+                                                </label>
                                             </td>
                                             <td>
-                                                <span class="badge badge-danger">Pay Now</span>
+                                                <div class="font-weight-semibold">[FDCD85] Specialization Fashion Design</div>
+                                                <!-- <div class="text-muted">Grumbled ripely eternal sniffed the when hello less much..</div> -->
                                             </td>
                                             <td>
-                                                April 18, 2015
+                                                3
                                             </td>
                                             <td>
-                                                April 21, 2015
+                                                <div class="d-inline-flex align-items-center">
+                                                    <i class="icon-calendar2 mr-2 text-info"></i>
+                                                    Monday, 08.10 - 13.10
+                                                </div>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <i class="icon-pin icon-small mr-2 text-primary"></i>
+                                                    Building 2 (Room 211)
+                                                </div>
                                             </td>
                                             <td>
-                                                <span class="badge badge-success">Paid on Mar 16, 2015</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>#0025</td>
-                                            <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
-                                                </h6>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-danger">Pay Now</span>
-                                            </td>
-                                            <td>
-                                                April 18, 2015
-                                            </td>
-                                            <td>
-                                                April 21, 2015
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-primary">27 days</span>
+                                                3
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>#0025</td>
                                             <td>
-                                                <h6 class="mb-0 font-weight-bold">
-                                                    $17,890
-                                                    <span class="d-block font-size-sm text-muted font-weight-normal">VAT $4,890</span>
-                                                </h6>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label p-0"></span>
+                                                </label>
                                             </td>
                                             <td>
-                                                <span class="badge badge-danger">Pay Now</span>
+                                                <div class="font-weight-semibold">[FDCW57] Internship</div>
                                             </td>
                                             <td>
-                                                April 18, 2015
+                                                1
                                             </td>
                                             <td>
-                                                April 21, 2015
+                                                <div class="d-inline-flex align-items-center">
+                                                    <i class="icon-calendar2 mr-2"></i>
+                                                    Monday, 14:20 - 16:40
+                                                </div>
                                             </td>
                                             <td>
-                                                <span class="badge badge-warning">5 days</span>
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label p-0"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">[FDCB95] Production Strategy</div>
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <i class="icon-calendar2 mr-2"></i>
+                                                    Tuesday, 14:00 - 15:40
+                                                </div>
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label p-0"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">[FDCB45] Brand Image</div>
+                                            </td>
+                                            <td>
+                                                3
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <i class="icon-calendar2 mr-2"></i>
+                                                    Wednesday, 14:00 - 15:40
+                                                </div>
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label p-0"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">[FDCC53I] Creative Module : Batik / Screen</div>
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <i class="icon-calendar2 mr-2"></i>
+                                                    Wednesday, 08:40 - 11:10
+                                                </div>
+                                            </td>
+                                            <td>
+                                                3
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label p-0"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">[FDCC22E] Specialization Pattern Technique : Children</div>
+                                            </td>
+                                            <td>
+                                                6
+                                            </td>
+                                            <td>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <i class="icon-calendar2 mr-2"></i>
+                                                    Friday, 07:20 - 12:20
+                                                </div>
+                                            </td>
+                                            <td>
+                                                2
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+                            <!-- /invoice template -->
+                            <!-- /inner container -->
                         </div>
                     </div>
                 </div>
