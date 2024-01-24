@@ -1,0 +1,166 @@
+<html lang="en-US" data-website-id="3" data-oe-company-name="ESMOD Jakarta">
+    <head>
+        @@include('./partials/head.html')
+        <script src="../assets/js/study_scoring.js"></script>
+    </head>
+    <body class="">
+        <div id="wrapwrap" class="  o_portal ">
+            <main class="d-lg-flex">
+                @@include('./partials/sidebar.html')
+                <div id="wrap" class="o_portal_wrap d-lg-flex flex-grow-1">
+                    <div class="container-fluid mb24">
+                        @@include('./partials/navbar.html')
+                        <div class="content p-1 p-md-3">
+                            <!-- Inner container -->
+                            <!-- Invoice template -->
+                            <div class="card">
+                                <div class="card-header bg-transparent header-elements-inline">
+                                    <div class="row w-100">
+                                        <div class="col-12 mb-3">
+                                            <h5>Absence</h5>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <div class="form-group d-flex">
+                                                <label for="exampleFormControlSelect1" style="min-width:fit-content" class="mr-2">Periode : </label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>Semester 1</option>
+                                                    <option>Semester 2</option>
+                                                    <option>Semester 3</option>
+                                                    <option>Semester 4</option>
+                                                    <option>Semester 5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <button type="button" class="btn btn-secondary text-white">Yesterday</button>
+                                            <button type="button" class="btn btn-danger text-white">Today</button>
+                                            <button type="button" class="btn btn-success text-white">Tomorrow</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <table class="table tasks-list table-lg table-scoring">
+                                    <thead>
+                                        <tr style="background:#ee3a43;color:white">
+                                            <th>
+                                                No
+                                            </th>
+                                            <th data-priority="2">Schedule</th>
+                                            <th data-priority="1">Code</th>
+                                            <th>Name</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">126 Class Room</div>
+                                                <div>Wednesday, Time : 13:20 to 15:00</div>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">FDCD85</div>
+                                            </td>
+                                            
+                                            <td>
+                                                Religious Study
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-warning text-white">Absence</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">127 Class Room</div>
+                                                <div>Monday, Time : 08:40 to 10:20</div>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">FDCW57</div>
+                                            </td>
+                                            <td>
+                                                Fashion Business Accounting
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-warning text-white">Absence</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                3
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">127 Class Room</div>
+                                                <div>Monday, Time : 11:20 to 14:40</div>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">FDCB95</div>
+                                            </td>
+                                            <td>
+                                                Fashion Marketing
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-warning text-white">Absence</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">127 Class Room</div>
+                                                <div>Monday, Time : 08:40 to 10:20</div>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">FDCB45</div>
+                                            </td>
+                                            <td>
+                                                Fashion Communication
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-warning text-white">Absence</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                5
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">126 Class Room</div>
+                                                <div>Tuesday, Time : 11:40 to 14:10</div>
+                                            </td>
+                                            <td>
+                                                <div class="font-weight-semibold">FDCC53I</div>
+                                            </td>
+                                            <td>
+                                                Organizational Behaviour
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-warning text-white">Absence</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /invoice template -->
+                            <!-- /inner container -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer
+                id="bottom"
+                data-anchor="true"
+                data-name="Footer"
+                class="o_footer o_colored_level o_cc "
+            >
+                @@include('./partials/footer.html')
+            </footer>
+        </div>
+    </body>
+</html>
